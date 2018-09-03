@@ -1,1 +1,1 @@
-UPDATE cats SET name = "Hana" WHERE name = "Hannah"; 
+UPDATE characters SET species = "martian" WHERE species = "human"; 
