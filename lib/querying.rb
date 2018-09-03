@@ -6,7 +6,6 @@ def select_name_and_motto_of_char_with_longest_motto
   "SELECT name, motto FROM characters ORDER BY motto LIMIT 1"
 end
 
-
 def select_value_and_count_of_most_prolific_species
   "SELECT species, COUNT(*) FROM characters
   GROUP BY species
@@ -15,7 +14,7 @@ def select_value_and_count_of_most_prolific_species
 end
 
 def select_name_and_series_subgenres_of_authors
-  "SELECT author.name, subgenres.name FROM authors, subgenres, series
+  "SELECT authors.name, subgenres.name FROM authors, subgenres, series
   WHERE authors.id = series.author_id
   AND subgenres.id = series.subgenre_id"
 
